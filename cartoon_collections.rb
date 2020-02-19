@@ -28,7 +28,7 @@ def find_the_cheese(snack)
     index = 0
     cheese_types = ["cheddar", "gouda", "camembert"]
     while index < snack.length do
-        if snack[index].include?("cheddar")
+        if snack[index].include?(cheese_types[index])
             return snack[index]
         else 
             return nil
